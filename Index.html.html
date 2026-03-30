@@ -1,0 +1,389 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Euro Detailing</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#" class="brand">
+        <img src="images/logo.png" alt="Euro Detailing logo" class="logo-image" />
+        <span class="company-name">Euro Detailing</span>
+      </a>
+
+      <div class="social-icons">
+        <a href="https://www.instagram.com/euro_detailingg" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+          <img src="images/instagram.png" alt="Instagram" class="social-icon" />
+        </a>
+      </div>
+
+      <div class="social-icons1">
+        <a href="https://www.tiktok.com/@eurodetailing" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+          <img src="images/tiktok.png" alt="TikTok" class="social-icon1" />
+        </a>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#" data-scroll-target="services">Services</a>
+        <a href="#" data-scroll-target="about-us">About Us</a>
+        <a href="#" data-scroll-target="reviews">Reviews</a>
+      </nav>
+
+      <a href="#" class="book-btn" data-scroll-target="services">Book Now</a>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-content">
+      <div class="location-pill">Newton &amp; Surrounding Areas</div>
+
+      <h1 class="hero-title">Premium Mobile Detailing That Comes To You</h1>
+
+      <p class="hero-description">
+        Suited with the dedicated equipment and the desire to work on your vehicle, 
+        we provide quality car care at price that keeps you comfortable.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#" class="hero-btn hero-btn-primary" data-scroll-target="services">Book Now</a>
+        <a href="#" class="hero-btn hero-btn-secondary" data-scroll-target="more-services">More</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <section class="reassurance-section" id="reviews">
+    <div class="reassurance-container">
+      <div class="review-side">
+        <div class="section-tag">Why People Trust Us</div>
+
+        <h2 class="reassurance-title">Results that demonstrate quality and reviews that back it up.</h2>
+
+        <p class="reassurance-text">
+          We focus on clean, detailed finishes,leaning towards your preferences, we offer more than just a regualr clean
+          that feels easy from booking to the finished product.
+        </p>
+
+        <div class="google-review-card">
+          <div class="google-review-top">
+            <div class="google-badge">
+              <img src="images/logo.png" alt="Euro Detailing logo" class="google-badge-logo">
+            </div>
+            <div>
+              <p class="google-label">Google Reviews</p>
+              <div class="google-rating-row">
+                <span class="google-rating-number">4.9</span>
+                <span class="google-stars">★★★★★</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="google-review-quote">
+            “Eric and team did a fantastic job on my car. It truly never looked so good. Every detail, 
+            inside and out, shines to perfection. They were a pleasure to work with. Highly recommend!”
+          </p>
+
+          <p class="google-review-author">— Local Client</p>
+
+          <a href="#" class="reviews-link">See Reviews</a>
+        </div>
+      </div>
+
+      <div class="comparison-side">
+        <div class="comparison-card">
+          <div class="comparison-wrapper" id="comparisonWrapper">
+            <img src="images/before.png" alt="Before detailing" class="comparison-image" />
+            
+            <div class="after-image-wrapper" id="afterWrapper">
+              <img src="images/after.png" alt="After detailing" class="comparison-image" />
+            </div>
+
+            <div class="comparison-line" id="comparisonLine"></div>
+            <div class="comparison-handle" id="comparisonHandle"></div>
+
+            <input
+              type="range"
+              min="0"
+              max="100"
+              value="50"
+              class="comparison-slider"
+              id="comparisonSlider"
+              aria-label="Before and after image comparison"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-slider-section" id="services">
+    <div class="services-slider-bg"></div>
+
+    <div class="services-slider-container">
+      <div class="services-heading">
+        <span class="section-tag">Services</span>
+        <h2>Choose Your Service</h2>
+        <p>Select between our Premium and Basic packages, along with our most popular maintenance services.</p>
+        <p>Please note: Basic services are intended for well-maintained vehicles. If your vehicle is not a good fit, we will advise you accordingly.</p>
+      </div>
+
+      <div class="vehicle-selector-wrap">
+        <div class="vehicle-selector-card">
+          <span class="vehicle-selector-label">Vehicle Size</span>
+
+          <div class="vehicle-selector-options">
+            <button type="button" class="vehicle-option-btn active" data-vehicle="sedan">Sedan</button>
+            <button type="button" class="vehicle-option-btn" data-vehicle="suv">SUV</button>
+            <button type="button" class="vehicle-option-btn" data-vehicle="large-suv">Large SUV</button>
+            <button type="button" class="vehicle-option-btn" data-vehicle="truck">Truck</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-slider-wrap">
+        <button class="slider-arrow slider-arrow-left" id="slider-prev" aria-label="Previous card">
+          &#10094;
+        </button>
+
+        <div class="services-slider" id="services-slider">
+          <!-- INTERIOR CARD -->
+          <article class="slide-card" data-card="interior">
+            <div class="slide-card-image">
+              <img src="images/interior-service.png" alt="Interior detailing">
+            </div>
+
+            <div class="slide-card-content">
+              <span class="slide-card-label">Interior</span>
+              <h3>Interior Detail</h3>
+
+              <div class="slide-card-toggle">
+                <button type="button" class="slide-toggle-btn active" data-service="interior" data-plan="basic">Basic</button>
+                <button type="button" class="slide-toggle-btn" data-service="interior" data-plan="premium">Premium</button>
+              </div>
+
+              <div class="maintenance-wrap" id="interior-maintenance-wrap">
+                <button type="button" class="maintenance-btn" data-service="interior" data-plan="maintenance">Maintenance</button>
+                <p class="maintenance-note" id="interior-maintenance-note">
+                  Reduced first time fare, then monthly maintenance detail price ($90).
+                </p>
+              </div>
+
+              <div class="slide-card-meta">
+                <div class="slide-card-price" id="interior-price">$105</div>
+                <div class="slide-card-time" id="interior-time">1.5-2 hrs</div>
+              </div>
+
+              <ul class="slide-card-list" id="interior-list">
+                <li>Full thorough vacuum</li>
+                <li>Dashboard and panels wiped and decontaminated</li>
+                <li>floor mats cleaned</li>
+                <li>Interior glass cleaned</li>
+                <li>Light dust and debris removal</li>
+              </ul>
+
+              <a href="https://cal.com/eric-salas/basic-interior-detail" class="slide-card-book" id="interior-book-btn">Book Now</a>
+            </div>
+          </article>
+
+          <!-- BUNDLE CARD -->
+          <article class="slide-card" data-card="bundle">
+            <div class="slide-card-image">
+              <img src="images/bundle-service.png" alt="Bundle detailing package">
+            </div>
+
+            <div class="slide-card-content">
+              <span class="slide-card-label">Bundle</span>
+              <h3>Interior + Exterior</h3>
+
+              <div class="slide-card-toggle">
+                <button type="button" class="slide-toggle-btn active" data-service="bundle" data-plan="basic">Basic Bundle</button>
+                <button type="button" class="slide-toggle-btn" data-service="bundle" data-plan="premium">Premium Bundle</button>
+              </div>
+
+              <div class="maintenance-wrap" id="bundle-maintenance-wrap">
+                <button type="button" class="maintenance-btn" data-service="bundle" data-plan="maintenance">Maintenance</button>
+                <p class="maintenance-note" id="bundle-maintenance-note">
+                  Reduced first time fare, then monthly maintenance detail price ($140).
+                </p>
+              </div>
+
+              <div class="slide-card-meta">
+                <div class="slide-card-price" id="bundle-price">$155</div>
+                <div class="slide-card-time" id="bundle-time">3 hrs</div>
+              </div>
+
+              <ul class="slide-card-list" id="bundle-list">
+                <li>Interior basic service included</li>
+                <li>Exterior basic service included</li>
+                <li>Better value than booking separately</li>
+                <li>One full appointment</li>
+                <li>Balanced inside-and-out refresh</li>
+              </ul>
+
+              <a href="https://cal.com/eric-salas/basic-bundle-detail" class="slide-card-book" id="bundle-book-btn">Book Now</a>
+            </div>
+          </article>
+
+          <!-- EXTERIOR CARD -->
+          <article class="slide-card" data-card="exterior">
+            <div class="slide-card-image">
+              <img src="images/exterior-service.png" alt="Exterior detailing">
+            </div>
+
+            <div class="slide-card-content">
+              <span class="slide-card-label">Exterior</span>
+              <h3>Exterior Detail</h3>
+
+              <div class="slide-card-toggle">
+                <button type="button" class="slide-toggle-btn active" data-service="exterior" data-plan="basic">Basic</button>
+                <button type="button" class="slide-toggle-btn" data-service="exterior" data-plan="premium">Premium</button>
+              </div>
+
+              <div class="maintenance-wrap" id="exterior-maintenance-wrap">
+                <button type="button" class="maintenance-btn" data-service="exterior" data-plan="maintenance">Maintenance</button>
+                <p class="maintenance-note" id="exterior-maintenance-note">
+                  Reduced first time fare, then monthly maintenance detail price ($65).
+                </p>
+              </div>
+
+              <div class="slide-card-meta">
+                <div class="slide-card-price" id="exterior-price">$75</div>
+                <div class="slide-card-time" id="exterior-time">45min-1+ hrs</div>
+              </div>
+
+              <ul class="slide-card-list" id="exterior-list">
+                <li>Ph neutral hand wash and alkali prewash</li>
+                <li>Wheel and tire clean</li>
+                <li>Bug and grime removal</li>
+                <li>Exterior glass cleaned</li>
+                <li>wax finish</li>
+              </ul>
+
+              <a href="https://cal.com/eric-salas/basic-exterior-detail" class="slide-card-book" id="exterior-book-btn">Book Now</a>
+            </div>
+          </article>
+        </div>
+
+        <button class="slider-arrow slider-arrow-right" id="slider-next" aria-label="Next card">
+          &#10095;
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="extra-services-section" id="more-services">
+    <div class="extra-services-container">
+      <div class="extra-services-heading">
+        <span class="section-tag">More Services</span>
+        <h2>Additional Services</h2>
+        <p>Extra detailing options available to add onto your appointment, 
+          Include them in the booking description when booking.</p>
+      </div>
+
+      <div class="extra-services-grid">
+        <article class="extra-service-card">
+          <h3>Plastic Mat Restoration</h3>
+          <p>A Basic Restoration treatment to bring weather mats back to a cleaner, darker finish.</p>
+          <div class="extra-service-price">$25+</div>
+        </article>
+
+        <article class="extra-service-card">
+          <h3>Engine Bay Detail</h3>
+          <p>Careful engine bay cleaning and dressing for a cleaner presentation while protecting sensitive areas; battery,alternator,etc.</p>
+          <div class="extra-service-price">$49.99</div>
+        </article>
+
+        <article class="extra-service-card">
+          <h3>Seat Extraction</h3>
+          <p>Targeted water Extraction for cloth seats to help lift and remove accumulation of dirt, spills, and built-up grime.</p>
+          <div class="extra-service-price">$49.99+</div>
+        </article>
+
+        <article class="extra-service-card">
+          <h3>Pet Hair Removal</h3>
+          <p>Focused removal of embedded pet hair from seats, carpet, and harder-to-reach interior areas.</p>
+          <div class="extra-service-price">$35+</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about-location-section" id="about-us">
+    <div class="about-location-container">
+      <div class="about-location-grid">
+        <article class="about-location-card">
+          <span class="section-tag">About Us</span>
+          <h2>Premium mobile detailing with a simple, personal approach.</h2>
+          <p>
+            Euro Detailing focuses on quality work, honest service, and a smoother experience from booking to finish.
+            We bring the equipment, attention to detail, and care directly to you so your vehicle gets worked on properly
+            without you needing to leave home.
+          </p>
+          <p>
+            Whether it is a maintenance clean or a more involved detail, the goal stays the same:
+            clean results, better comfort, and a finish that feels worth it.
+          </p>
+        </article>
+
+        <article class="about-location-card location-card">
+          <span class="section-tag">Location</span>
+          <h2>Newton &amp; Surrounding Areas</h2>
+          <p>
+            We are based around Newton and serve surrounding areas. Please note: if you feel like you may be a bit too far,
+            contact us and we will sort it out.
+          </p>
+
+          <div class="location-map-wrap">
+  <img
+    src="images/location-map.png"
+    alt="Euro Detailing service area map"
+    class="location-map-image"
+  />
+</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-heading">
+        <span class="section-tag">Contact</span>
+        <h2>Get In Touch</h2>
+        <p>Direct contact information for bookings, questions, or service area requests.</p>
+      </div>
+
+      <div class="contact-owner">Eric Salas</div>
+
+      <div class="contact-grid">
+        <article class="contact-card">
+          <span class="contact-label">Phone</span>
+          <a href="tel:+10000000000" class="contact-value">+1 781-290-3040</a>
+        </article>
+
+        <article class="contact-card">
+          <span class="contact-label">Email</span>
+          <a href="mailto:youremail@example.com" class="contact-value">Eurodetailinginfo@gmail.com</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="site-footer-container">
+      <p>&copy; <span id="footer-year"></span> Euro Detailing. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+  <main></main>
+  <script src="script.js"></script>
+</body>
+</html>
